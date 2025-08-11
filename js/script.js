@@ -93,7 +93,7 @@ ScrollReveal().reveal('.home-content p, .about-content',{ origin: 'right'});
 /*==================== typed js ====================*/
 
 const typed = new Typed('.multiple-text', {
-    strings: ['UI/UX Designer','Product Designer','Digital Designer'],
+    strings: ['AI & AR Developer','Computer Vision Enthusiast','UI/UX Designer','Software Developer'],
     typeSpeed:100,
     backSpeed:100,
     typeDelay:1000,
