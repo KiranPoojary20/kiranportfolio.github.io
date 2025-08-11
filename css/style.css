@@ -505,7 +505,7 @@ form button {
 }
 
 @media (max-width:768px) {
-    @menu-icon {
+    #menu-icon {
         display: block;
     }
 
@@ -608,3 +608,43 @@ form button {
 
 
   
+
+/* === Responsive Fixes Added === */
+
+/* Mobile menu visibility and stacking */
+@media (max-width:768px) {
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .portfolio-container,
+    .certificate-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .input-box {
+        flex-direction: column;
+    }
+
+    .input-box .input-field {
+        width: 100%;
+    }
+}
+
+/* Tablet view improvements */
+@media (max-width:992px) {
+    .portfolio-container,
+    .certificate-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
